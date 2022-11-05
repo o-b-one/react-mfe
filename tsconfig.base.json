@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mfe/feed": [
+        "./apps/feed/public-api.ts"
+      ],
+      "@mfe/login": [
+        "./apps/login/public-api.ts"
+      ],
+      "auth": [
+        "libs/auth/src/index.ts"
+      ]
+    }
+  }
+}
