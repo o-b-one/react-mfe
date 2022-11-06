@@ -70,9 +70,10 @@ export function FeedPage(props: FeedPageProps) {
   }
 
   return (
+    // eslint-disable-next-line react/jsx-no-useless-fragment
     <>
       {
-      inprogress && page == 1
+      inprogress && page === 1
       ? 'Loading...'
       : (<>
         <Input onKeyUp={e => searchWithDebounce(e.currentTarget.value, 300)} placeholder="Search"/>
@@ -96,7 +97,7 @@ export function FeedPage(props: FeedPageProps) {
       )}
     </>
   );
-};
+}
 
 
 export default FeedPage;
