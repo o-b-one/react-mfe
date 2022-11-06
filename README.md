@@ -1,6 +1,6 @@
 # Layered micro-frontend
 
-This repo is following the Micro-Frontend guidelines as demonstrated using Angular on [this repo](https://github.com/o-b-one/module-federation)
+This repo is following the Micro-Frontend guidelines in *React* as demonstrated on [this repo](https://github.com/o-b-one/module-federation) with *Angular*
 
 [More details on the micro-frontend Chaos article](https://engineering.zoominfo.com/the-micro-frontend-chaos-and-how-to-solve-it)
 
