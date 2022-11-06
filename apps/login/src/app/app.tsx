@@ -1,13 +1,13 @@
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { useContext } from 'react';
 import styles from './app.module.scss';
-
-import { Authorization } from './apis/authorization';
 import LoginForm from './login-form/login-form';
-
+import { AuthContext } from '@mfe/auth';
 
 export function LoginApp() {
-  const authHandler = Authorization.getInstance();
+  const authHandler = useContext(AuthContext);
+  
   return (
     <>
       <LoginForm loginHandler={authHandler}/>

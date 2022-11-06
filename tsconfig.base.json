@@ -11,14 +11,20 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
+      "@mfe/auth": [
+        "libs/auth/src/index.ts"
+      ],
+      "@mfe/auth/types": [
+        "libs/auth/src/types.ts"
+      ],
       "@mfe/feed": [
         "./apps/feed/public-api.ts"
       ],
       "@mfe/login": [
         "./apps/login/public-api.ts"
       ],
-      "auth": [
-        "libs/auth/src/index.ts"
+      "@mfe/navbar": [
+        "./apps/navbar/public-api.ts"
       ]
     }
   }

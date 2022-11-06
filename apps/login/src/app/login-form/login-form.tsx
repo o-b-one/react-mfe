@@ -3,13 +3,13 @@ import { FormGroup, TextField, Button, FormControl } from '@mui/material';
 import { MutableRefObject, useRef } from 'react';
 import { isValidEmail } from '../utilities/email-utilities';
 import { isValidPassword } from '../utilities/password-utilities';
-import { IAuthorization } from '../apis/authorization.interface';
+import { IUser } from '@mfe/auth/types';
 import { useState } from 'react';
 
 
 /* eslint-disable-next-line */
 export interface LoginFormProps {
-  loginHandler: IAuthorization
+  loginHandler: {login(email: string, password: string): Promise<IUser>}
 }
 
 
