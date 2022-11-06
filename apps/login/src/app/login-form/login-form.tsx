@@ -53,13 +53,15 @@ export function LoginForm(props: LoginFormProps) {
 
 
   return (
-    
+    <>
+    <h3>This form will accept any credentials 😉</h3>
     <FormGroup className={styles['container']}>
       <FormControl>
         <TextField 
           name='email' 
           type='email'
           label="E-mail"
+          placeholder='Enter an email'
           inputRef={emailRef}
         />
         </FormControl>
@@ -67,6 +69,7 @@ export function LoginForm(props: LoginFormProps) {
       <TextField name='password' 
         type='password'
         label="Password"
+        placeholder='Enter a 6-digit password'
         inputRef={passwordRef}
       />
       </FormControl>
@@ -74,6 +77,7 @@ export function LoginForm(props: LoginFormProps) {
         {!submitted ? 'Login' : 'Inprogress...'}
         </Button>
     </FormGroup>
+    </>
   );
 };
 

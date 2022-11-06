@@ -1,15 +1,18 @@
-(self["webpackChunklogin"] = self["webpackChunklogin"] || []).push([[227],{
+(self["webpackChunklogin"] = self["webpackChunklogin"] || []).push([[999],{
 
-/***/ 3227:
+/***/ 3999:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ public_api)
+});
+
 // EXTERNAL MODULE: consume shared module (default) react@=18.2.0 (singleton) (fallback: ../../node_modules/react/index.js)
 var index_js_ = __webpack_require__(7664);
-// EXTERNAL MODULE: ../../node_modules/react-dom/client.js
-var client = __webpack_require__(7029);
 ;// CONCATENATED MODULE: ./src/app/login-form/login-form.module.scss
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const login_form_module = ({});
@@ -40,6 +43,7 @@ var jsx_runtime = __webpack_require__(2322);
 
 
 /* eslint-disable-next-line */
+
 
 
 function LoginForm(props) {
@@ -74,26 +78,32 @@ function LoginForm(props) {
       }
     }
   };
-  return /*#__PURE__*/(0,jsx_runtime.jsxs)(FormGroup/* default */.Z, {
-    className: login_form_module.container,
-    children: [/*#__PURE__*/(0,jsx_runtime.jsx)(FormControl/* default */.Z, {
-      children: /*#__PURE__*/(0,jsx_runtime.jsx)(TextField/* default */.Z, {
-        name: "email",
-        type: "email",
-        label: "E-mail",
-        inputRef: emailRef
-      })
-    }), /*#__PURE__*/(0,jsx_runtime.jsx)(FormControl/* default */.Z, {
-      children: /*#__PURE__*/(0,jsx_runtime.jsx)(TextField/* default */.Z, {
-        name: "password",
-        type: "password",
-        label: "Password",
-        inputRef: passwordRef
-      })
-    }), /*#__PURE__*/(0,jsx_runtime.jsx)(Button/* default */.Z, {
-      variant: "contained",
-      onClick: submit,
-      children: !submitted ? 'Login' : 'Inprogress...'
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("h3", {
+      children: "This form will accept any credentials \uD83D\uDE09"
+    }), /*#__PURE__*/(0,jsx_runtime.jsxs)(FormGroup/* default */.Z, {
+      className: login_form_module.container,
+      children: [/*#__PURE__*/(0,jsx_runtime.jsx)(FormControl/* default */.Z, {
+        children: /*#__PURE__*/(0,jsx_runtime.jsx)(TextField/* default */.Z, {
+          name: "email",
+          type: "email",
+          label: "E-mail",
+          placeholder: "Enter an email",
+          inputRef: emailRef
+        })
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)(FormControl/* default */.Z, {
+        children: /*#__PURE__*/(0,jsx_runtime.jsx)(TextField/* default */.Z, {
+          name: "password",
+          type: "password",
+          label: "Password",
+          placeholder: "Enter a 6-digit password",
+          inputRef: passwordRef
+        })
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)(Button/* default */.Z, {
+        variant: "contained",
+        onClick: submit,
+        children: !submitted ? 'Login' : 'Inprogress...'
+      })]
     })]
   });
 }
@@ -117,30 +127,9 @@ function LoginApp() {
   });
 }
 /* harmony default export */ const app = (LoginApp);
-;// CONCATENATED MODULE: ./src/bootstrap.tsx
+;// CONCATENATED MODULE: ./public-api.ts
 
-
-
-
-const root = client/* createRoot */.s(document.getElementById('root'));
-root.render( /*#__PURE__*/(0,jsx_runtime.jsx)(index_js_.StrictMode, {
-  children: /*#__PURE__*/(0,jsx_runtime.jsx)(app, {})
-}));
-
-/***/ }),
-
-/***/ 7029:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-var __webpack_unused_export__;
-
-
-var m = __webpack_require__(3321);
-if (true) {
-  exports.s = m.createRoot;
-  __webpack_unused_export__ = m.hydrateRoot;
-} else { var i; }
-
+/* harmony default export */ const public_api = (app);
 
 /***/ })
 
