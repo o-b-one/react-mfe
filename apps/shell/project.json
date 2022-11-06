@@ -26,7 +26,7 @@
           "apps/shell/src/styles.scss"
         ],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "apps/shell/webpack.config.prod.js"
       },
       "configurations": {
         "development": {
@@ -52,11 +52,12 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/webpack:dev-server",
+      "executor": "@nrwl/react:module-federation-dev-server",
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "shell:build",
-        "hmr": true
+        "hmr": true,
+        "port": 4200
       },
       "configurations": {
         "development": {

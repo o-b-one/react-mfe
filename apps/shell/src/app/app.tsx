@@ -6,14 +6,14 @@ import React, { Suspense, useContext } from 'react';
 import { AuthContext } from '@mfe/auth';
 import styles from './app.module.scss';
 
-const CustomizeNavbar = React.lazy(() => import('@mfe/navbar'))
-const Login = React.lazy(() => import('@mfe/login'))
-const Feed = React.lazy(() => import('@mfe/feed'))
+const CustomizeNavbar = React.lazy(() => import('navbar/public-api'))
+const Login = React.lazy(() => import('login/public-api'))
+const Feed = React.lazy(() => import('feed/public-api'))
 
 export function App() {
   const auth = useContext(AuthContext);
  
-  const tabs = auth.isLoggedIn ? [{label: 'Feed', path: '/'}] : [];
+  const tabs = [] as any[]; //auth.isLoggedIn ? [{label: 'Feed', path: '/'}] : [];
   const loggedOutRoutes = [
       <Route
       path="/"

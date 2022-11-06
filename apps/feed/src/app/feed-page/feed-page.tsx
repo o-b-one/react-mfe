@@ -11,12 +11,14 @@ export interface FeedPageProps {
 
 
 export function FeedPage(props: FeedPageProps) {
+  
   const [page,setPage] = useState(1);
   const [limit,setLimit] = useState(20);
   const [tags,setTags] = useState([]as string[]);
   const [quotes, setQuotes] = useState([]) as [Array<{_id: string, content: string, author: string, tags: string[]}>, React.Dispatch<any>];
   const [searchTerm, setSearchTerm] = useState("")
   const [inprogress, setInprogress] = useState(false);
+
   let timeout: NodeJS.Timeout;
   const hasNext = useRef(true);
 

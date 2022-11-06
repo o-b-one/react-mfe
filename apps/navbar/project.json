@@ -26,7 +26,7 @@
           "apps/navbar/src/styles.scss"
         ],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "apps/navbar/webpack.config.prod.js"
       },
       "configurations": {
         "development": {
@@ -57,7 +57,7 @@
       "options": {
         "buildTarget": "navbar:build",
         "hmr": true,
-        "port": 4000
+        "port": 4204
       },
       "configurations": {
         "development": {

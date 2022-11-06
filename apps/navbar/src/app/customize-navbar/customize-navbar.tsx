@@ -24,7 +24,7 @@ export function CustomizeNavbar(props: CustomizeNavbarProps) {
       <AppBar position={props.fixed ? 'fixed' : 'static'}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{flexGrow: 1,display: 'flex', justifyContent: 'flex-end'}}>
+          <Box sx={{flexGrow: 0,display: 'flex', justifyContent: 'flex-end'}}>
           {props.tabs.map((tab) => (
                 <Button key={tab.label}>
                   <Link to={tab.path} className={styles['link']}>
