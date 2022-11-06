@@ -1,6 +1,6 @@
-import * as __WEBPACK_EXTERNAL_MODULE__localhost_4201_remoteEntry_js_27abda8b__ from "//localhost:4201/remoteEntry.js";
-import * as __WEBPACK_EXTERNAL_MODULE__localhost_4203_remoteEntry_js_8dfdcee8__ from "//localhost:4203/remoteEntry.js";
-import * as __WEBPACK_EXTERNAL_MODULE__localhost_4204_remoteEntry_js_cd5bf8b7__ from "//localhost:4204/remoteEntry.js";
+import * as __WEBPACK_EXTERNAL_MODULE_https_o_b_one_github_io_react_mfe_apps_feed_remoteEntry_js_2cc74728__ from "https://o-b-one.github.io/react-mfe/apps/feed/remoteEntry.js";
+import * as __WEBPACK_EXTERNAL_MODULE_https_o_b_one_github_io_react_mfe_apps_login_remoteEntry_js_8cca5520__ from "https://o-b-one.github.io/react-mfe/apps/login/remoteEntry.js";
+import * as __WEBPACK_EXTERNAL_MODULE_https_o_b_one_github_io_react_mfe_apps_navbar_remoteEntry_js_a24ae66b__ from "https://o-b-one.github.io/react-mfe/apps/navbar/remoteEntry.js";
 /******/ var __webpack_modules__ = ({
 
 /***/ 9415:
@@ -10,30 +10,30 @@ Promise.all(/* import() */[__webpack_require__.e(664), __webpack_require__.e(554
 
 /***/ }),
 
-/***/ 5907:
+/***/ 2065:
 /***/ ((module) => {
 
 var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
 var y = x => () => x
-module.exports = __WEBPACK_EXTERNAL_MODULE__localhost_4201_remoteEntry_js_27abda8b__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_https_o_b_one_github_io_react_mfe_apps_feed_remoteEntry_js_2cc74728__;
 
 /***/ }),
 
-/***/ 9082:
+/***/ 9255:
 /***/ ((module) => {
 
 var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
 var y = x => () => x
-module.exports = __WEBPACK_EXTERNAL_MODULE__localhost_4203_remoteEntry_js_8dfdcee8__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_https_o_b_one_github_io_react_mfe_apps_login_remoteEntry_js_8cca5520__;
 
 /***/ }),
 
-/***/ 2054:
+/***/ 6896:
 /***/ ((module) => {
 
 var x = y => { var x = {}; __webpack_require__.d(x, y); return x; }
 var y = x => () => x
-module.exports = __WEBPACK_EXTERNAL_MODULE__localhost_4204_remoteEntry_js_cd5bf8b7__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_https_o_b_one_github_io_react_mfe_apps_navbar_remoteEntry_js_a24ae66b__;
 
 /***/ })
 
@@ -142,7 +142,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__localhost_4204_remoteEntry_js_cd5bf8
 /******/ 	// This function allow to reference async chunks
 /******/ 	__webpack_require__.u = (chunkId) => {
 /******/ 		// return url for filenames based on template
-/******/ 		return "" + chunkId + "." + {"7":"fda0e6127d970e91","29":"57f9d08be6227495","257":"b4ea6690902ce6e7","316":"fe05122b7638c4d8","455":"dc7c6c55d626428b","514":"48c5cfcc1a57b280","520":"791ae087d9dc2216","554":"23193af47ddb33f0","591":"e894b80b388b296d","664":"67f37fcd5a43b451","784":"bb9ed28ea0f4b12e"}[chunkId] + ".js";
+/******/ 		return "" + chunkId + "." + {"7":"fda0e6127d970e91","29":"7efdd1f1c2685aa6","257":"164ef4742f93623d","316":"fe05122b7638c4d8","455":"dc7c6c55d626428b","514":"b9c3e410a5bf2fed","520":"791ae087d9dc2216","554":"23193af47ddb33f0","591":"e894b80b388b296d","664":"67f37fcd5a43b451","784":"bb9ed28ea0f4b12e"}[chunkId] + ".js";
 /******/ 	};
 /******/ })();
 /******/ 
@@ -246,17 +246,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__localhost_4204_remoteEntry_js_cd5bf8
 /******/ 		"3029": [
 /******/ 			"default",
 /******/ 			"./public-api",
-/******/ 			5907
+/******/ 			9255
 /******/ 		],
 /******/ 		"9257": [
 /******/ 			"default",
 /******/ 			"./public-api",
-/******/ 			2054
+/******/ 			6896
 /******/ 		],
 /******/ 		"9514": [
 /******/ 			"default",
 /******/ 			"./public-api",
-/******/ 			9082
+/******/ 			2065
 /******/ 		]
 /******/ 	};
 /******/ 	__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -347,9 +347,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__localhost_4204_remoteEntry_js_cd5bf8
 /******/ 				register("react-dom", "18.2.0", () => (Promise.all([__webpack_require__.e(316), __webpack_require__.e(664)]).then(() => (() => (__webpack_require__(8316))))));
 /******/ 				register("react-router-dom", "6.4.1", () => (Promise.all([__webpack_require__.e(591), __webpack_require__.e(664)]).then(() => (() => (__webpack_require__(6591))))));
 /******/ 				register("react", "18.2.0", () => (__webpack_require__.e(784).then(() => (() => (__webpack_require__(2784))))));
-/******/ 				initExternal(2054);
-/******/ 				initExternal(5907);
-/******/ 				initExternal(9082);
+/******/ 				initExternal(6896);
+/******/ 				initExternal(9255);
+/******/ 				initExternal(2065);
 /******/ 			}
 /******/ 			break;
 /******/ 		}
