@@ -1,8 +1,3 @@
-
-
-
-
-
 import { Card, Input, Typography, CardContent, Chip } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { FeedService } from '../api/feed.service';
@@ -42,24 +37,25 @@ export function FeedPage(props: FeedPageProps) {
   }
 
   return (
-    <div className={styles['container']}>
+    <>
       <Input onKeyUp={e => searchWithDebounce(e.currentTarget.value, 300)} placeholder="Search"/>
       {tags.map(tag => <Chip label={tag} key={tag} onClick={() => toggleTag(tag)} />)}
       {filteredQuotes.map(q => 
+      <div className={styles['fact']} key={q._id}>
         <Card sx={{ minWidth: 275 }}>
         <CardContent>
           {q.tags.map(tag => <Chip label={tag} key={tag} onClick={() => toggleTag(tag)} />)}
           <Typography variant="body2">
-          "<i>{q.content}</i>"
+          <i>"{q.content}"</i>
           </Typography>
           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {q.author}
           </Typography>
         </CardContent>
       </Card>
-      
+      </div>
       )}      
-    </div>
+    </>
   );
 };
 

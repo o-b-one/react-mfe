@@ -1,9 +1,10 @@
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
-import { Route, Routes, Link, Navigate } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import React, { Suspense, useContext } from 'react';
 import { AuthContext } from '@mfe/auth';
+import styles from './app.module.scss';
 
 const CustomizeNavbar = React.lazy(() => import('@mfe/navbar'))
 const Login = React.lazy(() => import('@mfe/login'))
@@ -31,20 +32,22 @@ export function App() {
 
   return (
     <>
-    <CustomizeNavbar tabs={tabs}/>
-    <Suspense fallback={<div>Loading...</div>}>
-    <Routes>
-    {
-      auth.isLoggedIn
-        ? loggedInRoutes
-        : loggedOutRoutes
-    }
-     <Route
-          path="/*"
-          element={<Navigate to="/" replace />} 
-        ></Route>
-    </Routes>
-    </Suspense>
+    <CustomizeNavbar tabs={tabs} fixed={true}/>
+    <section className={styles['page-area']}>
+      <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+      {
+        auth.isLoggedIn
+          ? loggedInRoutes
+          : loggedOutRoutes
+      }
+      <Route
+            path="/*"
+            element={<Navigate to="/" replace />} 
+          ></Route>
+      </Routes>
+      </Suspense>
+    </section>
     </>
   );
 
